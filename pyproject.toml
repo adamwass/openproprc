@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools >= 42"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openproprc"
+description = "An RC electric propulsion analysis code built on the OpenMDAO framework"
+readme = "README.md"
+dynamic = ["version"]
+dependencies = [
+    "openmdao",
+    "numpy",
+    "scipy",
+]
+requires-python = ">=3.9"

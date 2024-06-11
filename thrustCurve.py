@@ -5,7 +5,7 @@ import numpy as np
 import scipy as sc
 import openmdao.api as om
 import matplotlib.pyplot as plt
-from motorModelOpenmdog import *
+from openproprc import ElectricPropulsion
 
 '''
 class MotorPropeller(om.ExplicitComponent):
@@ -45,7 +45,7 @@ prob.setup()
 prob.set_val('battery.voltage_supply', 22.2, units = 'V')
 prob.set_val('battery.resistance', 0.012, units = 'ohm')
 prob.set_val('motor.kv', 280, units = 'rpm / V')
-prob.set_val('motor.current_idle', 1.2, units = 'A')
+prob.set_val('motor.idle_current', 1.2, units = 'A')
 prob.set_val('motor.resistance', 26.3, units = 'mohm')
 prob.set_val('prop.diameter', 22, units = 'inch')
 prob.set_val('prop.pitch', 10, units = 'inch')
