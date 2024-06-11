@@ -5,7 +5,7 @@ import numpy as np
 import scipy as sc
 import openmdao.api as om
 import matplotlib.pyplot as plt
-from motorModelOpenmdog import *
+from openproprc import ElectricPropulsion
 
 '''
 class MotorPropeller(om.ExplicitComponent):
